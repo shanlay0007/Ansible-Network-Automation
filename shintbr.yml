@@ -1,4 +1,3 @@
----
 - name: Run Cisco IOS command
   cisco.nxos.nxos_command:
     commands: show ip int br
