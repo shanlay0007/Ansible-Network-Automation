@@ -1,5 +1,0 @@
----
-- name: Run Cisco IOS command
-  cisco.nxos.nxos_command:
-    commands: show ip int br
-  when: ansible_network_os == 'cisco.ios.ios’
