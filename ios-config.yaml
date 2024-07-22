@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  ansible_connection: ansible.netcommon.network_cli
+  connection: ansible.netcommon.network_cli
   ansible_network_os: cisco.ios.ios
 
   tasks:
