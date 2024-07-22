@@ -1,6 +1,6 @@
 ---
 - name: Retrieve network configurations
-  hosts: network
+  hosts: Cisco R2
   gather_facts: false
 
   tasks:
