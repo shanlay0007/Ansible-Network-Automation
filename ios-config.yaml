@@ -1,5 +1,5 @@
 ---
-- hosts: routers
+- hosts: CiscoR2
   gather_facts: false
 
   tasks:
