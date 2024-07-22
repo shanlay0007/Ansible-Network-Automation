@@ -1,8 +1,8 @@
 ---
 - hosts: all
+  gather_facts: false
   connection: ansible.netcommon.network_cli
-  ansible_network_os: cisco.ios.ios
-
+  
   tasks:
     - name: Configure top level configuration
       cisco.ios.ios_config:
