@@ -9,7 +9,7 @@
       - name: Run cli_command on Cisco IOS
         ansible.netcommon.cli_command:
           command: show ip int br
-        register: result
+        register: output
 
       - name: Display result to terminal window
         debug:
