@@ -1,14 +1,14 @@
 ---
-- hosts: CiscoR2
+- hosts: routers
   gather_facts: false
-  connection: network_cli
 
   tasks:
-
+  
     - name: Change hostname
       ios_config:
         lines:
           - hostname Ansible_ROUTER2
+          
     - name: show hostname
       ios_command:
         commands: sh run | s hostname
