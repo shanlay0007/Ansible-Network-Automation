@@ -1,4 +1,4 @@
 - name: Run Cisco IOS command
-  cisco.ios.ios_command:
+  ios_command:
     commands: show ip int br
-  when: ansible_network_os == 'cisco.ios.ios’
+  register: output
