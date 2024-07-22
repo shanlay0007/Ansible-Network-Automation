@@ -2,12 +2,12 @@
 
 - hosts: all
   gather_facts: false
-  connection: local
+  connection: ansible.netcommon.network_cli
 
   tasks:
 
   - name: show ip int br
-    ios_command:
+    ansible.netcommon.cli_command:
       commands: sh ip int br
     register: output
 
