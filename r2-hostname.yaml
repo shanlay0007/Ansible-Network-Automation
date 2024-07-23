@@ -1,0 +1,11 @@
+---
+
+- hosts: routers
+  gather_facts: false
+  connection: network_cli
+
+  tasks:
+    - name: Change Hostname R2
+      ios_config:
+        lines:
+          - hostname R2-change-ansible
