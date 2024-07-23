@@ -5,8 +5,8 @@
   connection: network_cli
 
   tasks:
-    - name: Change Hostname R2
-      ios_config:
-        lines:
-          - hostname R2-change-ansible-update
+    - name: Run Cisco IOS command
+        ios_command:
+          commands: show ip int br
+        register: output
 
