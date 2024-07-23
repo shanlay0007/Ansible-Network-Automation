@@ -5,8 +5,11 @@
   connection: network_cli
 
   tasks:
-    - name: Run Cisco IOS command
-        ios_command:
-          commands: show ip int br
-        register: output
+    - name: show ip int br
+    ios_command:
+      commands: sh ip int br
+    register: output
 
+  - name: print output
+    debug:
+      var: output.stdout_lines
