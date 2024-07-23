@@ -5,7 +5,7 @@
   connection: network_cli
 
   tasks:
-    - name: show ip int br
+  - name: show ip int br
     ios_command:
       commands: sh ip int br
     register: output
